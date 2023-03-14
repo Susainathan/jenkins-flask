@@ -1,0 +1,7 @@
+version: '3'
+services:
+  flask-app:
+    build: .
+    container_name: sample-flask
+    volumes:
+      - .:/home/flask/app
