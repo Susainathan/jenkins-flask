@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                docker login -u="$susainathansusai@gmail.com" -p="$Fleurdelis+1.618"
                 echo "This is Build stage."
             }
         }
