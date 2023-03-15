@@ -6,10 +6,5 @@ pipeline {
         echo "Test run"
       }
     }
-    stage('build') {
-      steps {
-        sh "docker-compose build"
-      }
-    }
   }
 }
