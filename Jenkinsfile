@@ -1,5 +1,8 @@
 pipeline {
-    agent any 
+    agent any
+    environment {
+        DOCKERHUB_CREDENTIALS = credentials('Docker-Hub')
+        }
     stages {
         stage('Build') { 
             steps {
